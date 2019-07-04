@@ -1,0 +1,8 @@
+{
+  "name": "typescript-hello-world",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/lodash": "^4.14.53",
+    "lodash": "^4.12.0"
+  }
+}

@@ -1,3 +1,5 @@
+import * as _ from "lodash";
+
 async function f(): Promise<string> {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -7,8 +9,8 @@ async function f(): Promise<string> {
 }
 
 async function main() {
-	const result = await f()
-	console.log(result);
+	const results = await Promise.all(_.times(10, f));
+	console.log(results);
 }
 
 main();
